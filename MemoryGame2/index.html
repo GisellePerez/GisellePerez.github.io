@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memotest</title>
+    <style>@import url('https://fonts.googleapis.com/css?family=Chewy|Sniglet');</style>
+    <style>@import url('https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900');</style>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="welcomeDiv">        
+        <div id="welcomeInfo">
+            <p id="welcomp">¡Memotest Ada!</p>
+            <input type="text" id="playerNameInput" placeholder="Ingresa tu nombre">
+            <div id="levelDiv">
+                <select name="levels" id="lvlSelect">
+                    <option value="-1" disabled selected hidden>Selecciona un nivel</option>
+                </select> 
+                <label class="oblig"></label>                         
+            </div>
+            <div id="lvlButtonDiv">
+                <input type="button" class="btn" id="jugar" value="¡Jugar!">
+            </div>
+        </div>
+    </div>         
+    <div class="main">
+        <aside class="left">
+            <h1>¡Memotest Ada!</h1>
+            <div id="nameDiv"></div> 
+            <div class="instrucciones">
+                <h3>Instrucciones:</h3>
+                <p class="instr">1. Haz click en una ficha</p>
+                <p class="instr">2. Busca su compañera</p>
+                <p class="instr">3. Forma todos los pares en la menor cantidad de intentos</p>
+                <p class="instr">4. A disfrutar del juego!</p>               
+            </div>  
+            <div id="infoJuego"> <p id="intentosP"></p> <p id="scoreP"></p> </div> 
+        </aside>
+        <section class="right">
+            <div class="fila">
+                <div class="ficha background" id="ficha1" data-par="1"></div>
+                <div class="ficha background" id="ficha2" data-par="2"></div>
+                <div class="ficha background" id="ficha3" data-par="3"></div>
+                <div class="ficha background" id="ficha4" data-par="4"></div>
+            </div>
+            <div class="fila">
+                <div class="ficha background" id="ficha5" data-par="1"></div>
+                <div class="ficha background" id="ficha6" data-par="2"></div>
+                <div class="ficha background" id="ficha7" data-par="3"></div>
+                <div class="ficha background" id="ficha8" data-par="4"></div>
+            </div>
+            <div class="fila">    
+                <div class="ficha background" id="ficha9" data-par="5"></div>
+                <div class="ficha background" id="ficha10" data-par="6"></div>
+                <div class="ficha background" id="ficha11" data-par="5"></div>
+                <div class="ficha background" id="ficha12" data-par="6"></div>
+            </div>
+        </section>
+    </div>
+    <div id="rankingDiv" class="noDisplayRanking"> 
+        <div id="rankingTitleDiv"></div> 
+        <div id="rankingInfoDiv"></div> 
+        <div id="restartButtonDiv"><button class="btn" id="restart">Reiniciar</button></div>        
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
